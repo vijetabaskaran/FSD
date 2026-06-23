@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Example</title>
+</head>
+<body>
+
+<h2 id="heading">Welcome to JavaScript</h2>
+
+<button id="btn1">Click Me</button>
+
+<script>
+    let btn = document.getElementById("btn1");
+    let heading = document.getElementById("heading");
+
+    btn.onclick = function()
+    {
+        alert("Button Clicked!");
+        heading.innerText = "Text Changed Successfully!";
+    };
+</script>
+
+</body>
+</html>
