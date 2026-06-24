@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener and Validation</title>
+</head>
+<body>
+
+<h2>Input Validation</h2>
+
+<input type="text" id="text1" placeholder="Enter your name">
+<button id="btn1">Submit</button>
+
+<p id="p1">Output: None</p>
+
+<script>
+    let btn = document.getElementById("btn1");
+    let input = document.getElementById("text1");
+    let para = document.getElementById("p1");
+
+    btn.addEventListener("click", function()
+    {
+        if(input.value.trim() == "")
+        {
+            para.innerText = "Input field cannot be empty!";
+        }
+        else
+        {
+            para.innerText = "Welcome, " + input.value;
+        }
+    });
+</script>
+
+</body>
+</html>
